@@ -1,35 +1,28 @@
-;; 창크기 설정
+;; 뭔가 이상할 때에는 디버그를 활용한다. 평소에는 주석처리
+;;(setq debug-ignored-errors (remq 'user-error debug-ignored-errors))
+;;(setq debug-on-error 't)  
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
+;;(package-initialize)
+(add-to-list 'load-path "~/.emacs.d/elisp")
 
-(setq default-frame-alist
-     '((width . 180)
-       (height . 45)))
+(require 'my-vars)
 
-;;창간 이동은 Meta 키로
-(windmove-default-keybindings 'meta)
+(require 'my-package)
 
-;;패키지 저장소 추가
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
+(require 'my-display)
 
-;; monokai 테마
-(use-package monokai-theme
-  :ensure t
-  :config
-  (load-theme 'monokai t))
+(require 'my-keybindings)
+
+(require 'my-config)
+
+(require 'my-git)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (monokai-theme use-package))))
+ '(package-selected-packages (quote (use-package monokai-theme magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
