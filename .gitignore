@@ -3,3 +3,4 @@ elpa/
 *.elc
 *~
 network-security.data
+projectile-bookmarks.eld
