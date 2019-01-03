@@ -20,9 +20,9 @@
 ;;   )
 
 ;; 풀 스크린으로
-(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
+;;(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 ;; 창 최대 크기로
-;;(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+(add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
 
 (prefer-coding-system 'utf-8)
