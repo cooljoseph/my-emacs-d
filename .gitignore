@@ -4,3 +4,8 @@ elpa/
 *~
 network-security.data
 projectile-bookmarks.eld
+recentf
+projectile.cache
+**#**
+.emacs.desktop
+lock

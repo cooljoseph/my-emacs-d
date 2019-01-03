@@ -1,3 +1,5 @@
+(require 'my-package)
+
 (use-package helm
   :ensure t
   )
@@ -12,7 +14,7 @@
 
 (use-package helm-projectile
   :ensure t
-  :bind ("S-p" . helm-projectile-find-file)
+  :bind ("s-p" . helm-projectile-find-file)
   :config
     (helm-projectile-on))
 

@@ -9,15 +9,17 @@
 
 (require 'my-package)
 
-(require 'my-display)
+(use-package my-display)
 
-(require 'my-keybindings)
+(use-package my-keybindings)
 
-(require 'my-config)
+(use-package my-config)
 
-(require 'my-git)
+(use-package my-git)
 
-(require 'my-helm)
+(use-package my-helm)
+
+(use-package my-dashboard)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -26,7 +28,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (helm-projectile projectile helm use-package monokai-theme magit))))
+    (dashboard-hackernews helm-projectile projectile helm use-package monokai-theme magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

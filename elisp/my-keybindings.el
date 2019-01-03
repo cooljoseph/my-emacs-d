@@ -10,6 +10,13 @@
   (windmove-default-keybindings 'meta)
   )
 
+;; Print 키 Unbind
+(global-unset-key (kbd "s-p"))
+
+;; 버퍼 이동 키
+(global-set-key [C-tab] 'my-next-buffer)
+(global-set-key [C-S-tab] 'my-prev-buffer)
+
 ;; 설정 다시 읽기
 (defun reload-init-file()
   (interactive)
