@@ -24,6 +24,16 @@
 ;; 창 최대 크기로
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
+;; 트리 형태의 플러그인
+(use-package neotree
+  :ensure t
+  :config
+  (setq neo-theme 'icons)
+  (global-set-key (kbd "C-c C-t") 'neotree-toggle))
+
+;; 아이콘
+(use-package all-the-icons
+  :ensure t)
 
 (prefer-coding-system 'utf-8)
 ;;(set-default-coding-system 'utf-8)
