@@ -28,12 +28,16 @@
 (use-package neotree
   :ensure t
   :config
-  (setq neo-theme 'icons)
+  (setq neo-theme 'icons)k
   (global-set-key (kbd "C-c C-t") 'neotree-toggle))
 
 ;; 아이콘
 (use-package all-the-icons
   :ensure t)
+
+;; 괄호 하이라이팅
+(show-paren-mode 1)
+(setq shop-paren-delay 0)
 
 (prefer-coding-system 'utf-8)
 ;;(set-default-coding-system 'utf-8)
