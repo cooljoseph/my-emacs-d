@@ -4,22 +4,13 @@
 (require 'use-package)
 
 (use-package monokai-theme
+  :ensure t)
+
+(use-package afternoon-theme
   :ensure t
   :config
-  (load-theme 'monokai t))
+  (load-theme 'afternoon t))
 
-;; (when I-am-on-MacOSX
-;;   (setq default-frame-alist
-;;      '((width . 195)
-;;        (height . 50)))
-;;   )
-;; (when I-am-on-Linux
-;;   (setq default-frame-alist
-;;      '((width . 130)
-;;        (height . 45)))
-;;   )
-
-;; 풀 스크린으로
 ;;(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 ;; 창 최대 크기로
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
@@ -28,7 +19,7 @@
 (use-package neotree
   :ensure t
   :config
-  (setq neo-theme 'icons)k
+  (setq neo-theme 'icons)
   (global-set-key (kbd "C-c C-t") 'neotree-toggle))
 
 ;; 아이콘
