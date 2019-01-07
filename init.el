@@ -19,7 +19,8 @@
 
 (use-package my-helm)
 
-(use-package my-dashboard)
+;; 좀 그지 같이 동작해서 당분간 막아둔다.
+;;(use-package my-dashboard)
 
 (use-package my-yasnippet)
 
