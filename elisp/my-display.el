@@ -11,9 +11,8 @@
   :config
   (load-theme 'afternoon t))
 
-;;(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 ;; 창 최대 크기로
-(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+(setq initial-frame-alist '((fullscreen . maximized)))
 
 ;; 트리 형태의 플러그인
 (use-package neotree

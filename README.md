@@ -1,5 +1,2 @@
 # my emacs.d
 
-
-
-
